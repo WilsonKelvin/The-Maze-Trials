@@ -425,6 +425,9 @@ back.Visible = false
 Esframe.Visible = false
 Parframe.Visible = false
 Ouframe.Visible = false
+seframe.Visible = false
+blframe.Visible = false
+glaframe.Visible = false
 Close.Visible = true
 end)
 
