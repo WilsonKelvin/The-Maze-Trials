@@ -52,6 +52,7 @@ local D = Instance.new("TextButton")
 local map = Instance.new("TextButton")
 local grave = Instance.new("TextButton")
 local gate = Instance.new("TextButton")
+local griever = Instance.new("TextButton")
 
 Maze.Name = "Maze"
 Maze.Parent = game.CoreGui
@@ -746,7 +747,7 @@ end)
 map.Name = "map"
 map.Parent = glaframe
 map.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
-map.Position = UDim2.new(0.02, 0, 0.14, 0)
+map.Position = UDim2.new(0.50, 0, 0.14, 0)
 map.Size = UDim2.new(0, 72, 0, 26)
 map.Font = Enum.Font.FredokaOne
 map.Text = "Map House"
@@ -787,3 +788,31 @@ Open.Visible = true
 Main.Visible = false
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-731, 557, -31)
 end) 
+
+griever.Name = "griever"
+griever.Parent = Lframe
+griever.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+griever.Position = UDim2.new(0.50, 0, 0.02, 0)
+griever.Size = UDim2.new(0, 72, 0, 26)
+griever.Font = Enum.Font.FredokaOne
+griever.Text = "Glade"
+griever.TextColor3 = Color3.fromRGB(255, 255, 255)
+griever.TextSize = 14.000
+griever.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.GrieverRaid.Griever.HumanoidRootPart.Position)
+end) 
+
+
+
+
+
+
+
+
+
+
+
+
+
