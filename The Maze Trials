@@ -434,7 +434,7 @@ end)
 section.Name = "section"
 section.Parent = Lframe
 section.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
-section.Position = UDim2.new(0.02, 0, 0.02, 0)
+section.Position = UDim2.new(0.74, 0, 0.02, 0)
 section.Size = UDim2.new(0, 72, 0, 26)
 section.Font = Enum.Font.FredokaOne
 section.Text = "Section"
@@ -548,7 +548,7 @@ end)
 blade.Name = "blade"
 blade.Parent = Lframe
 blade.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
-blade.Position = UDim2.new(0.26, 0, 0.02, 0)
+blade.Position = UDim2.new(0.50, 0, 0.14, 0)
 blade.Size = UDim2.new(0, 72, 0, 26)
 blade.Font = Enum.Font.FredokaOne
 blade.Text = "Blade"
