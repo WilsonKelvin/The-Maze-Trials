@@ -1,1 +1,403 @@
+local Maze = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local Lframe = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local Lescape = Instance.new("TextButton")
+local Esframe  = Instance.new("Frame")
+local esec7 = Instance.new("TextButton")
+local esec6 = Instance.new("TextButton")
+local esec5 = Instance.new("TextButton")
+local esec4 = Instance.new("TextButton")
+local esec3 = Instance.new("TextButton")
+local esec2 = Instance.new("TextButton")
+local Cliff = Instance.new("TextButton")
+local Lparkour = Instance.new("TextButton")
+local Parframe = Instance.new("Frame")
+local newt = Instance.new("TextButton")
+local Tsec3 = Instance.new("TextButton")
+local Louter = Instance.new("TextButton")
+local Ouframe = Instance.new("Frame")
+local outer1 = Instance.new("TextButton")
+local outer2 = Instance.new("TextButton")
+local outer3 = Instance.new("TextButton")
+local outer4 = Instance.new("TextButton")
+local safe = Instance.new("TextButton")
+local back = Instance.new("TextButton")
 
+Maze.Name = "Maze"
+Maze.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = Maze
+Main.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+Main.Position = UDim2.new(0.132290184, 0, 0.150300607, 0)
+Main.Size = UDim2.new(0, 331, 0, 270)
+Main.Visible = false
+Main.Active = true
+Main.Selectable = true
+Main.Draggable = true
+
+Label.Name = "Label"
+Label.Parent = Main
+Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label.BackgroundTransparency = 1.000
+Label.Position = UDim2.new(-0.0399380997, 0, -0.00923076924, 0)
+Label.Size = UDim2.new(0, 200, 0, 30)
+Label.Font = Enum.Font.SciFi
+Label.Text = "The Maze Trials - Beta"
+Label.TextColor3 = Color3.fromRGB(76, 211, 211)
+Label.TextSize = 15.000
+
+Lframe.Name = "Lframe"
+Lframe.Parent = Main
+Lframe.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Lframe.BackgroundTransparency = 0.5
+Lframe.Position = UDim2.new(0, 0, 0.09, 0)
+Lframe.Size = UDim2.new(0, 330, 0, 246)
+Lframe.Visible = true
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.Position = UDim2.new(0.924775183, 0, 0, 0)
+Close.Size = UDim2.new(0, 24, 0, 24)
+Close.Font = Enum.Font.Ubuntu
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 14.000
+Close.MouseButton1Down:connect(function()
+Maze:Destroy()
+end)
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Main
+Minimize.BackgroundColor3 = Color3.fromRGB(115, 237, 255)
+Minimize.Position = UDim2.new(0.839879155, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 22, 0, 24)
+Minimize.Font = Enum.Font.Ubuntu
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextSize = 14.000
+Minimize.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+end)
+
+Open.Name = "Open"
+Open.Parent = Maze
+Open.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+Open.Position = UDim2.new(0.839879155, 0, -0.0123076923, 0)
+Open.Size = UDim2.new(0, 54, 0, 22)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 14.000
+Open.Visible = true
+Open.MouseButton1Down:connect(function()
+Main.Visible = true
+Open.Visible = false
+end)
+
+Lescape.Name = "Lescape"
+Lescape.Parent = Lframe
+Lescape.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+Lescape.Position = UDim2.new(0.02, 0, 0.02, 0)
+Lescape.Size = UDim2.new(0, 72, 0, 26)
+Lescape.Font = Enum.Font.FredokaOne
+Lescape.Text = "Escape"
+Lescape.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lescape.TextSize = 14.000
+Lescape.MouseButton1Down:connect(function()
+Esframe.Visible = true
+Lframe.Visible = false
+back.Visible = true
+close.Visible = false
+end)
+
+Esframe.Name = "Esframe"
+Esframe.Parent = Main
+Esframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+Esframe.BackgroundTransparency = 0.5
+Esframe.Position = UDim2.new(0, 0, 0.09, 0)
+Esframe.Size = UDim2.new(0, 330, 0, 246)
+Esframe.Visible = false
+
+esec7.Name = "esec7"
+esec7.Parent = Esframe
+esec7.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+esec7.Position = UDim2.new(0.02, 0, 0.02, 0)
+esec7.Size = UDim2.new(0, 72, 0, 26)
+esec7.Font = Enum.Font.FredokaOne
+esec7.Text = "Sec 7"
+esec7.TextColor3 = Color3.fromRGB(255, 255, 255)
+esec7.TextSize = 14.000
+esec7.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(375, 557, -5780)
+end) 
+
+esec6.Name = "esec6"
+esec6.Parent = Esframe
+esec6.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+esec6.Position = UDim2.new(0.26, 0, 0.02, 0)
+esec6.Size = UDim2.new(0, 72, 0, 26)
+esec6.Font = Enum.Font.FredokaOne
+esec6.Text = "Sec 6"
+esec6.TextColor3 = Color3.fromRGB(255, 255, 255)
+esec6.TextSize = 14.000
+esec6.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4132, 557, -2257)
+end) 
+
+esec5.Name = "esec5"
+esec5.Parent = Esframe
+esec5.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+esec5.Position = UDim2.new(0.50, 0, 0.02, 0)
+esec5.Size = UDim2.new(0, 72, 0, 26)
+esec5.Font = Enum.Font.FredokaOne
+esec5.Text = "Sec 5"
+esec5.TextColor3 = Color3.fromRGB(255, 255, 255)
+esec5.TextSize = 14.000
+esec5.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4221, 557, 3043)
+end) 
+
+esec4.Name = "esec4"
+esec4.Parent = Esframe
+esec4.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+esec4.Position = UDim2.new(0.02, 0, 0.14, 0)
+esec4.Size = UDim2.new(0, 72, 0, 26)
+esec4.Font = Enum.Font.FredokaOne
+esec4.Text = "Sec 4"
+esec4.TextColor3 = Color3.fromRGB(255, 255, 255)
+esec4.TextSize = 14.000
+esec4.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(445, 557, 6392)
+end) 
+
+esec3.Name = "esec3"
+esec3.Parent = Esframe
+esec3.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+esec3.Position = UDim2.new(0.26, 0, 0.14, 0)
+esec3.Size = UDim2.new(0, 72, 0, 26)
+esec3.Font = Enum.Font.FredokaOne
+esec3.Text = "Sec 3"
+esec3.TextColor3 = Color3.fromRGB(255, 255, 255)
+esec3.TextSize = 14.000
+esec3.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4714, 557, 5988)
+end) 
+
+esec2.Name = "esec2"
+esec2.Parent = Esframe
+esec2.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+esec2.Position = UDim2.new(0.50, 0, 0.14, 0)
+esec2.Size = UDim2.new(0, 72, 0, 26)
+esec2.Font = Enum.Font.FredokaOne
+esec2.Text = "Sec 2"
+esec2.TextColor3 = Color3.fromRGB(255, 255, 255)
+esec2.TextSize = 14.000
+esec2.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7802, 557, 2182)
+end) 
+
+Cliff.Name = "Cliff"
+Cliff.Parent = Esframe
+Cliff.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+Cliff.Position = UDim2.new(0.26, 0, 0.26, 0)
+Cliff.Size = UDim2.new(0, 72, 0, 26)
+Cliff.Font = Enum.Font.FredokaOne
+Cliff.Text = "Cliff"
+Cliff.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cliff.TextSize = 14.000
+Cliff.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1357, 557, 1561)
+end) 
+
+Lparkour.Name = "Lparkour"
+Lparkour.Parent = Lframe
+Lparkour.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+Lparkour.Position = UDim2.new(0.26, 0, 0.02, 0)
+Lparkour.Size = UDim2.new(0, 72, 0, 26)
+Lparkour.Font = Enum.Font.FredokaOne
+Lparkour.Text = "Parkour"
+Lparkour.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lparkour.TextSize = 14.000
+Lparkour.MouseButton1Down:connect(function()
+Lframe.Visible = false
+back.Visible = true
+Parframe.Visible = true
+Close.Visible = false
+end)
+
+Parframe.Name = "Parframe"
+Parframe.Parent = Main
+Parframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+Parframe.BackgroundTransparency = 0.5
+Parframe.Position = UDim2.new(0, 0, 0.09, 0)
+Parframe.Size = UDim2.new(0, 330, 0, 246)
+Parframe.Visible = false
+
+newt.Name = "newt"
+newt.Parent = Parframe
+newt.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+newt.Position = UDim2.new(0.02, 0, 0.02, 0)
+newt.Size = UDim2.new(0, 72, 0, 26)
+newt.Font = Enum.Font.FredokaOne
+newt.Text = "Newt"
+newt.TextColor3 = Color3.fromRGB(255, 255, 255)
+newt.TextSize = 14.000
+newt.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-140, 887, 336)
+end)
+
+Tsec3.Name = "Tsec3"
+Tsec3.Parent = Parframe
+Tsec3.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+Tsec3.Position = UDim2.new(0.26, 0, 0.02, 0)
+Tsec3.Size = UDim2.new(0, 72, 0, 26)
+Tsec3.Font = Enum.Font.FredokaOne
+Tsec3.Text = "Trigger sec3"
+Tsec3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tsec3.TextSize = 14.000
+Tsec3.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2406, 557, 2722)
+end)
+
+Louter.Name = "Louter"
+Louter.Parent = Lframe
+Louter.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+Louter.Position = UDim2.new(0.26, 0, 0.14, 0)
+Louter.Size = UDim2.new(0, 72, 0, 26)
+Louter.Font = Enum.Font.FredokaOne
+Louter.Text = "Outer"
+Louter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Louter.TextSize = 14.000
+Louter.MouseButton1Down:connect(function()
+Ouframe.Visible = true
+Lframe.Visible = false
+back.Visible = true
+Close.Visible = false
+end)
+
+Ouframe.Name = "Ouframe"
+Ouframe.Parent = Main
+Ouframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+Ouframe.BackgroundTransparency = 0.5
+Ouframe.Position = UDim2.new(0, 0, 0.09, 0)
+Ouframe.Size = UDim2.new(0, 330, 0, 246)
+Ouframe.Visible = false
+
+outer1.Name = "outer1"
+outer1.Parent = Ouframe
+outer1.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+outer1.Position = UDim2.new(0.02, 0, 0.02, 0)
+outer1.Size = UDim2.new(0, 72, 0, 26)
+outer1.Font = Enum.Font.FredokaOne
+outer1.Text = "Outer 1"
+outer1.TextColor3 = Color3.fromRGB(255, 255, 255)
+outer1.TextSize = 14.000
+outer1.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(106, 557, 1320)
+end) 
+
+outer2.Name = "outer2"
+outer2.Parent = Ouframe
+outer2.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+outer2.Position = UDim2.new(0.26, 0, 0.02, 0)
+outer2.Size = UDim2.new(0, 72, 0, 26)
+outer2.Font = Enum.Font.FredokaOne
+outer2.Text = "Outer 2"
+outer2.TextColor3 = Color3.fromRGB(255, 255, 255)
+outer2.TextSize = 14.000
+outer2.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, 557, -967)
+end) 
+
+outer3.Name = "outer3"
+outer3.Parent = Ouframe
+outer3.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+outer3.Position = UDim2.new(0.50, 0, 0.02, 0)
+outer3.Size = UDim2.new(0, 72, 0, 26)
+outer3.Font = Enum.Font.FredokaOne
+outer3.Text = "Outer 3"
+outer3.TextColor3 = Color3.fromRGB(255, 255, 255)
+outer3.TextSize = 14.000
+outer3.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3053, 557, 1323)
+end) 
+
+outer4.Name = "outer4"
+outer4.Parent = Ouframe
+outer4.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+outer4.Position = UDim2.new(0.74, 0, 0.02, 0)
+outer4.Size = UDim2.new(0, 72, 0, 26)
+outer4.Font = Enum.Font.FredokaOne
+outer4.Text = "Outer 4"
+outer4.TextColor3 = Color3.fromRGB(255, 255, 255)
+outer4.TextSize = 14.000
+outer4.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3095, 557, -1015)
+end) 
+
+safe.Name = "safe"
+safe.Parent = Lframe
+safe.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+safe.Position = UDim2.new(0.02, 0, 0.14, 0)
+safe.Size = UDim2.new(0, 72, 0, 26)
+safe.Font = Enum.Font.FredokaOne
+safe.Text = "Safe Place"
+safe.TextColor3 = Color3.fromRGB(255, 255, 255)
+safe.TextSize = 14.000
+safe.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1190, -3, 215)
+end)
+
+back.Name = "back"
+back.Parent = Main
+back.BackgroundColor3 = Color3.fromRGB(128, 128, 128)
+back.Position = UDim2.new(0.924775183, 0, 0, 0)
+back.Size = UDim2.new(0, 24, 0, 24)
+back.Font = Enum.Font.Ubuntu
+back.Text = "->"
+back.TextColor3 = Color3.fromRGB(255, 255, 255)
+back.TextSize = 14.000
+back.Visible = false
+back.MouseButton1Down:connect(function()
+Lframe.Visible = true
+back.Visible = false
+Esframe.Visible = false
+Parframe.Visible = false
+Ouframe.Visible = false
+Close.Visible = true
+end)
