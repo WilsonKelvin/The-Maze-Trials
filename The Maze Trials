@@ -26,6 +26,32 @@ local outer3 = Instance.new("TextButton")
 local outer4 = Instance.new("TextButton")
 local safe = Instance.new("TextButton")
 local back = Instance.new("TextButton")
+local Lframe = Instance.new("Frame")
+local section = Instance.new("TextButton")
+local seframe = Instance.new("Frame")
+local sec7 = Instance.new("TextButton")
+local sec6 = Instance.new("TextButton")
+local sec5 = Instance.new("TextButton")
+local sec4 = Instance.new("TextButton")
+local sec3 = Instance.new("TextButton")
+local sec2 = Instance.new("TextButton")
+local blade = Instance.new("TextButton")
+local blframe = Instance.new("Frame")
+local bsec7 = Instance.new("TextButton")
+local bsec6 = Instance.new("TextButton")
+local bsec5 = Instance.new("TextButton")
+local bsec4 = Instance.new("TextButton")
+local bsec3 = Instance.new("TextButton")
+local bsec2 = Instance.new("TextButton")
+local Lglade = Instance.new("TextButton")
+local glaframe = Instance.new("Frame")
+local A = Instance.new("TextButton")
+local B = Instance.new("TextButton")
+local C = Instance.new("TextButton")
+local D = Instance.new("TextButton")
+local map = Instance.new("TextButton")
+local grave = Instance.new("TextButton")
+local gate = Instance.new("TextButton")
 
 Maze.Name = "Maze"
 Maze.Parent = game.CoreGui
@@ -402,115 +428,6 @@ Ouframe.Visible = false
 Close.Visible = true
 end)
 
-
-local Maze = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local Label = Instance.new("TextLabel")
-local Lframe = Instance.new("Frame")
-local Close = Instance.new("TextButton")
-local Minimize = Instance.new("TextButton")
-local Open = Instance.new("TextButton")
-local section = Instance.new("TextButton")
-local seframe = Instance.new("Frame")
-local sec7 = Instance.new("TextButton")
-local sec6 = Instance.new("TextButton")
-local sec5 = Instance.new("TextButton")
-local sec4 = Instance.new("TextButton")
-local sec3 = Instance.new("TextButton")
-local sec2 = Instance.new("TextButton")
-local blade = Instance.new("TextButton")
-local blframe = Instance.new("Frame")
-local bsec7 = Instance.new("TextButton")
-local bsec6 = Instance.new("TextButton")
-local bsec5 = Instance.new("TextButton")
-local bsec4 = Instance.new("TextButton")
-local bsec3 = Instance.new("TextButton")
-local bsec2 = Instance.new("TextButton")
-local Lglade = Instance.new("TextButton")
-local glaframe = Instance.new("Frame")
-local back = Instance.new("TextButton")
-local A = Instance.new("TextButton")
-local B = Instance.new("TextButton")
-local C = Instance.new("TextButton")
-local D = Instance.new("TextButton")
-local map = Instance.new("TextButton")
-local grave = Instance.new("TextButton")
-local gate = Instance.new("TextButton")
-
-Maze.Name = "Maze"
-Maze.Parent = game.CoreGui
-
-Main.Name = "Main"
-Main.Parent = Maze
-Main.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-Main.Position = UDim2.new(0.132290184, 0, 0.150300607, 0)
-Main.Size = UDim2.new(0, 331, 0, 270)
-Main.Visible = false
-Main.Active = true
-Main.Selectable = true
-Main.Draggable = true
-
-Label.Name = "Label"
-Label.Parent = Main
-Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Label.BackgroundTransparency = 1.000
-Label.Position = UDim2.new(-0.0399380997, 0, -0.00923076924, 0)
-Label.Size = UDim2.new(0, 200, 0, 30)
-Label.Font = Enum.Font.SciFi
-Label.Text = "The Maze Trials - Beta_2"
-Label.TextColor3 = Color3.fromRGB(76, 211, 211)
-Label.TextSize = 15.000
-
-Lframe.Name = "Lframe"
-Lframe.Parent = Main
-Lframe.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-Lframe.BackgroundTransparency = 0.5
-Lframe.Position = UDim2.new(0, 0, 0.09, 0)
-Lframe.Size = UDim2.new(0, 330, 0, 246)
-Lframe.Visible = true
-
-Close.Name = "Close"
-Close.Parent = Main
-Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Close.Position = UDim2.new(0.924775183, 0, 0, 0)
-Close.Size = UDim2.new(0, 24, 0, 24)
-Close.Font = Enum.Font.Ubuntu
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
-Close.TextSize = 14.000
-Close.MouseButton1Down:connect(function()
-Maze:Destroy()
-end)
-
-Minimize.Name = "Minimize"
-Minimize.Parent = Main
-Minimize.BackgroundColor3 = Color3.fromRGB(115, 237, 255)
-Minimize.Position = UDim2.new(0.839879155, 0, 0, 0)
-Minimize.Size = UDim2.new(0, 22, 0, 24)
-Minimize.Font = Enum.Font.Ubuntu
-Minimize.Text = "-"
-Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
-Minimize.TextSize = 14.000
-Minimize.MouseButton1Down:connect(function()
-Main.Visible = false
-Open.Visible = true
-end)
-
-Open.Name = "Open"
-Open.Parent = Maze
-Open.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-Open.Position = UDim2.new(0.839879155, 0, 0.08, 0)
-Open.Size = UDim2.new(0, 54, 0, 22)
-Open.Font = Enum.Font.SourceSans
-Open.Text = "Open"
-Open.TextColor3 = Color3.fromRGB(255, 255, 255)
-Open.TextSize = 14.000
-Open.Visible = true
-Open.MouseButton1Down:connect(function()
-Main.Visible = true
-Open.Visible = false
-end)
-
 section.Name = "section"
 section.Parent = Lframe
 section.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
@@ -867,23 +784,3 @@ Open.Visible = true
 Main.Visible = false
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-731, 557, -31)
 end) 
-
-
-back.Name = "back"
-back.Parent = Main
-back.BackgroundColor3 = Color3.fromRGB(128, 128, 128)
-back.Position = UDim2.new(0.924775183, 0, 0, 0)
-back.Size = UDim2.new(0, 24, 0, 24)
-back.Font = Enum.Font.Ubuntu
-back.Text = "->"
-back.TextColor3 = Color3.fromRGB(255, 255, 255)
-back.TextSize = 14.000
-back.Visible = false
-back.MouseButton1Down:connect(function()
-Lframe.Visible = true
-back.Visible = false
-seframe.Visible = false
-blframe.Visible = false
-Close.Visible = true
-glaframe.Visible = false
-end)
