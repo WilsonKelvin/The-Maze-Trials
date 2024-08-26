@@ -401,3 +401,489 @@ Parframe.Visible = false
 Ouframe.Visible = false
 Close.Visible = true
 end)
+
+
+local Maze = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local Lframe = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local section = Instance.new("TextButton")
+local seframe = Instance.new("Frame")
+local sec7 = Instance.new("TextButton")
+local sec6 = Instance.new("TextButton")
+local sec5 = Instance.new("TextButton")
+local sec4 = Instance.new("TextButton")
+local sec3 = Instance.new("TextButton")
+local sec2 = Instance.new("TextButton")
+local blade = Instance.new("TextButton")
+local blframe = Instance.new("Frame")
+local bsec7 = Instance.new("TextButton")
+local bsec6 = Instance.new("TextButton")
+local bsec5 = Instance.new("TextButton")
+local bsec4 = Instance.new("TextButton")
+local bsec3 = Instance.new("TextButton")
+local bsec2 = Instance.new("TextButton")
+local Lglade = Instance.new("TextButton")
+local glaframe = Instance.new("Frame")
+local back = Instance.new("TextButton")
+local A = Instance.new("TextButton")
+local B = Instance.new("TextButton")
+local C = Instance.new("TextButton")
+local D = Instance.new("TextButton")
+local map = Instance.new("TextButton")
+local grave = Instance.new("TextButton")
+local gate = Instance.new("TextButton")
+
+Maze.Name = "Maze"
+Maze.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = Maze
+Main.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+Main.Position = UDim2.new(0.132290184, 0, 0.150300607, 0)
+Main.Size = UDim2.new(0, 331, 0, 270)
+Main.Visible = false
+Main.Active = true
+Main.Selectable = true
+Main.Draggable = true
+
+Label.Name = "Label"
+Label.Parent = Main
+Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label.BackgroundTransparency = 1.000
+Label.Position = UDim2.new(-0.0399380997, 0, -0.00923076924, 0)
+Label.Size = UDim2.new(0, 200, 0, 30)
+Label.Font = Enum.Font.SciFi
+Label.Text = "The Maze Trials - Beta_2"
+Label.TextColor3 = Color3.fromRGB(76, 211, 211)
+Label.TextSize = 15.000
+
+Lframe.Name = "Lframe"
+Lframe.Parent = Main
+Lframe.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Lframe.BackgroundTransparency = 0.5
+Lframe.Position = UDim2.new(0, 0, 0.09, 0)
+Lframe.Size = UDim2.new(0, 330, 0, 246)
+Lframe.Visible = true
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.Position = UDim2.new(0.924775183, 0, 0, 0)
+Close.Size = UDim2.new(0, 24, 0, 24)
+Close.Font = Enum.Font.Ubuntu
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 14.000
+Close.MouseButton1Down:connect(function()
+Maze:Destroy()
+end)
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Main
+Minimize.BackgroundColor3 = Color3.fromRGB(115, 237, 255)
+Minimize.Position = UDim2.new(0.839879155, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 22, 0, 24)
+Minimize.Font = Enum.Font.Ubuntu
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextSize = 14.000
+Minimize.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+end)
+
+Open.Name = "Open"
+Open.Parent = Maze
+Open.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+Open.Position = UDim2.new(0.839879155, 0, 0.08, 0)
+Open.Size = UDim2.new(0, 54, 0, 22)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 14.000
+Open.Visible = true
+Open.MouseButton1Down:connect(function()
+Main.Visible = true
+Open.Visible = false
+end)
+
+section.Name = "section"
+section.Parent = Lframe
+section.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+section.Position = UDim2.new(0.02, 0, 0.02, 0)
+section.Size = UDim2.new(0, 72, 0, 26)
+section.Font = Enum.Font.FredokaOne
+section.Text = "Section"
+section.TextColor3 = Color3.fromRGB(255, 255, 255)
+section.TextSize = 14.000
+section.MouseButton1Down:connect(function()
+Lframe.Visible = false
+seframe.Visible = true
+back.Visible = true
+Close.Visible = false
+end)
+
+seframe.Name = "seframe"
+seframe.Parent = Main
+seframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+seframe.BackgroundTransparency = 0.5
+seframe.Position = UDim2.new(0, 0, 0.09, 0)
+seframe.Size = UDim2.new(0, 330, 0, 246)
+seframe.Visible = false
+
+sec7.Name = "sec7"
+sec7.Parent = seframe
+sec7.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+sec7.Position = UDim2.new(0.02, 0, 0.02, 0)
+sec7.Size = UDim2.new(0, 72, 0, 26)
+sec7.Font = Enum.Font.FredokaOne
+sec7.Text = "Sec 7"
+sec7.TextColor3 = Color3.fromRGB(255, 255, 255)
+sec7.TextSize = 14.000
+sec7.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-265, 557, -2083)
+end) 
+
+sec6.Name = "sec6"
+sec6.Parent = seframe
+sec6.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+sec6.Position = UDim2.new(0.26, 0, 0.02, 0)
+sec6.Size = UDim2.new(0, 72, 0, 26)
+sec6.Font = Enum.Font.FredokaOne
+sec6.Text = "Sec 6"
+sec6.TextColor3 = Color3.fromRGB(255, 255, 255)
+sec6.TextSize = 14.000
+sec6.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1480, 557, 322)
+end) 
+
+sec5.Name = "sec5"
+sec5.Parent = seframe
+sec5.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+sec5.Position = UDim2.new(0.50, 0, 0.02, 0)
+sec5.Size = UDim2.new(0, 72, 0, 26)
+sec5.Font = Enum.Font.FredokaOne
+sec5.Text = "Sec 5"
+sec5.TextColor3 = Color3.fromRGB(255, 255, 255)
+sec5.TextSize = 14.000
+sec5.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(461, 557, 2294)
+end) 
+
+sec4.Name = "sec4"
+sec4.Parent = seframe
+sec4.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+sec4.Position = UDim2.new(0.02, 0, 0.14, 0)
+sec4.Size = UDim2.new(0, 72, 0, 26)
+sec4.Font = Enum.Font.FredokaOne
+sec4.Text = "Sec 4"
+sec4.TextColor3 = Color3.fromRGB(255, 255, 255)
+sec4.TextSize = 14.000
+sec4.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1378, 558, 2851)
+end) 
+
+sec3.Name = "sec3"
+sec3.Parent = seframe
+sec3.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+sec3.Position = UDim2.new(0.26, 0, 0.14, 0)
+sec3.Size = UDim2.new(0, 72, 0, 26)
+sec3.Font = Enum.Font.FredokaOne
+sec3.Text = "Sec 3"
+sec3.TextColor3 = Color3.fromRGB(255, 255, 255)
+sec3.TextSize = 14.000
+sec3.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3489, 557, 2278)
+end) 
+
+sec2.Name = "sec2"
+sec2.Parent = seframe
+sec2.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+sec2.Position = UDim2.new(0.50, 0, 0.14, 0)
+sec2.Size = UDim2.new(0, 72, 0, 26)
+sec2.Font = Enum.Font.FredokaOne
+sec2.Text = "Sec 2"
+sec2.TextColor3 = Color3.fromRGB(255, 255, 255)
+sec2.TextSize = 14.000
+sec2.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4250, 557, 210)
+end) 
+
+blade.Name = "blade"
+blade.Parent = Lframe
+blade.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+blade.Position = UDim2.new(0.26, 0, 0.02, 0)
+blade.Size = UDim2.new(0, 72, 0, 26)
+blade.Font = Enum.Font.FredokaOne
+blade.Text = "Blade"
+blade.TextColor3 = Color3.fromRGB(255, 255, 255)
+blade.TextSize = 14.000
+blade.MouseButton1Down:connect(function()
+Lframe.Visible = false
+blframe.Visible = true
+back.Visible = true
+Close.Visible = false
+end) 
+
+blframe.Name = "blframe"
+blframe.Parent = Main
+blframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+blframe.BackgroundTransparency = 0.5
+blframe.Position = UDim2.new(0, 0, 0.09, 0)
+blframe.Size = UDim2.new(0, 330, 0, 246)
+blframe.Visible = false
+
+bsec7.Name = "bsec7"
+bsec7.Parent = blframe
+bsec7.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+bsec7.Position = UDim2.new(0.02, 0, 0.02, 0)
+bsec7.Size = UDim2.new(0, 72, 0, 26)
+bsec7.Font = Enum.Font.FredokaOne
+bsec7.Text = "Sec 7"
+bsec7.TextColor3 = Color3.fromRGB(255, 255, 255)
+bsec7.TextSize = 14.000
+bsec7.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(655, 557, -3139)
+end) 
+
+bsec6.Name = "bsec6"
+bsec6.Parent = blframe
+bsec6.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+bsec6.Position = UDim2.new(0.26, 0, 0.02, 0)
+bsec6.Size = UDim2.new(0, 72, 0, 26)
+bsec6.Font = Enum.Font.FredokaOne
+bsec6.Text = "Sec 6"
+bsec6.TextColor3 = Color3.fromRGB(255, 255, 255)
+bsec6.TextSize = 14.000
+bsec6.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2497, 557, -190)
+end) 
+
+bsec5.Name = "bsec5"
+bsec5.Parent = blframe
+bsec5.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+bsec5.Position = UDim2.new(0.50, 0, 0.02, 0)
+bsec5.Size = UDim2.new(0, 72, 0, 26)
+bsec5.Font = Enum.Font.FredokaOne
+bsec5.Text = "Sec 5"
+bsec5.TextColor3 = Color3.fromRGB(255, 255, 255)
+bsec5.TextSize = 14.000
+bsec5.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1607, 557, 3053)
+end) 
+
+bsec4.Name = "bsec4"
+bsec4.Parent = blframe
+bsec4.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+bsec4.Position = UDim2.new(0.02, 0, 0.14, 0)
+bsec4.Size = UDim2.new(0, 72, 0, 26)
+bsec4.Font = Enum.Font.FredokaOne
+bsec4.Text = "Sec 4"
+bsec4.TextColor3 = Color3.fromRGB(255, 255, 255)
+bsec4.TextSize = 14.000
+bsec4.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1409, 558, 4531)
+end) 
+
+bsec3.Name = "bsec3"
+bsec3.Parent = blframe
+bsec3.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+bsec3.Position = UDim2.new(0.26, 0, 0.14, 0)
+bsec3.Size = UDim2.new(0, 72, 0, 26)
+bsec3.Font = Enum.Font.FredokaOne
+bsec3.Text = "Sec 3"
+bsec3.TextColor3 = Color3.fromRGB(255, 255, 255)
+bsec3.TextSize = 14.000
+bsec3.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4572, 557, 3356)
+end) 
+
+bsec2.Name = "bsec2"
+bsec2.Parent = blframe
+bsec2.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+bsec2.Position = UDim2.new(0.50, 0, 0.14, 0)
+bsec2.Size = UDim2.new(0, 72, 0, 26)
+bsec2.Font = Enum.Font.FredokaOne
+bsec2.Text = "Sec 2"
+bsec2.TextColor3 = Color3.fromRGB(255, 255, 255)
+bsec2.TextSize = 14.000
+bsec2.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5992, 557, 254)
+end) 
+
+Lglade.Name = "Lglade"
+Lglade.Parent = Lframe
+Lglade.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+Lglade.Position = UDim2.new(0.50, 0, 0.02, 0)
+Lglade.Size = UDim2.new(0, 72, 0, 26)
+Lglade.Font = Enum.Font.FredokaOne
+Lglade.Text = "Glade"
+Lglade.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lglade.TextSize = 14.000
+Lglade.MouseButton1Down:connect(function()
+Lframe.Visible = false
+glaframe.Visible = true
+back.Visible = true
+Close.Visible = false
+end) 
+
+glaframe.Name = "glaframe"
+glaframe.Parent = Main
+glaframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+glaframe.BackgroundTransparency = 0.5
+glaframe.Position = UDim2.new(0, 0, 0.09, 0)
+glaframe.Size = UDim2.new(0, 330, 0, 246)
+glaframe.Visible = false
+
+A.Name = "A"
+A.Parent = glaframe
+A.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+A.Position = UDim2.new(0.02, 0, 0.02, 0)
+A.Size = UDim2.new(0, 72, 0, 26)
+A.Font = Enum.Font.FredokaOne
+A.Text = "A"
+A.TextColor3 = Color3.fromRGB(255, 255, 255)
+A.TextSize = 14.000
+A.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-907, 558, 769)
+end) 
+
+B.Name = "B"
+B.Parent = glaframe
+B.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+B.Position = UDim2.new(0.26, 0, 0.02, 0)
+B.Size = UDim2.new(0, 72, 0, 26)
+B.Font = Enum.Font.FredokaOne
+B.Text = "B"
+B.TextColor3 = Color3.fromRGB(255, 255, 255)
+B.TextSize = 14.000
+B.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1280, 558, 298)
+end) 
+
+C.Name = "C"
+C.Parent = glaframe
+C.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+C.Position = UDim2.new(0.50, 0, 0.02, 0)
+C.Size = UDim2.new(0, 72, 0, 26)
+C.Font = Enum.Font.FredokaOne
+C.Text = "C"
+C.TextColor3 = Color3.fromRGB(255, 255, 255)
+C.TextSize = 14.000
+C.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1678, 558, -306)
+end) 
+
+D.Name = "D"
+D.Parent = glaframe
+D.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+D.Position = UDim2.new(0.74, 0, 0.02, 0)
+D.Size = UDim2.new(0, 72, 0, 26)
+D.Font = Enum.Font.FredokaOne
+D.Text = "D"
+D.TextColor3 = Color3.fromRGB(255, 255, 255)
+D.TextSize = 14.000
+D.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1490, 555, 349)
+end) 
+
+map.Name = "map"
+map.Parent = glaframe
+map.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+map.Position = UDim2.new(0.02, 0, 0.14, 0)
+map.Size = UDim2.new(0, 72, 0, 26)
+map.Font = Enum.Font.FredokaOne
+map.Text = "Map House"
+map.TextColor3 = Color3.fromRGB(255, 255, 255)
+map.TextSize = 14.000
+map.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1849, 558, 598)
+end) 
+
+grave.Name = "grave"
+grave.Parent = glaframe
+grave.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+grave.Position = UDim2.new(0.26, 0, 0.14, 0)
+grave.Size = UDim2.new(0, 72, 0, 26)
+grave.Font = Enum.Font.FredokaOne
+grave.Text = "Grave"
+grave.TextColor3 = Color3.fromRGB(255, 255, 255)
+grave.TextSize = 14.000
+grave.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2080, 558, -83)
+end) 
+
+gate.Name = "gate"
+gate.Parent = glaframe
+gate.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+gate.Position = UDim2.new(0.02, 0, 0.14, 0)
+gate.Size = UDim2.new(0, 72, 0, 26)
+gate.Font = Enum.Font.FredokaOne
+gate.Text = "Gate"
+gate.TextColor3 = Color3.fromRGB(255, 255, 255)
+gate.TextSize = 14.000
+gate.MouseButton1Down:connect(function()
+Open.Visible = true
+Main.Visible = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-731, 557, -31)
+end) 
+
+
+back.Name = "back"
+back.Parent = Main
+back.BackgroundColor3 = Color3.fromRGB(128, 128, 128)
+back.Position = UDim2.new(0.924775183, 0, 0, 0)
+back.Size = UDim2.new(0, 24, 0, 24)
+back.Font = Enum.Font.Ubuntu
+back.Text = "->"
+back.TextColor3 = Color3.fromRGB(255, 255, 255)
+back.TextSize = 14.000
+back.Visible = false
+back.MouseButton1Down:connect(function()
+Lframe.Visible = true
+back.Visible = false
+seframe.Visible = false
+blframe.Visible = false
+Close.Visible = true
+glaframe.Visible = false
+end)
