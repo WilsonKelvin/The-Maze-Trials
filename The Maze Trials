@@ -801,7 +801,7 @@ griever.TextSize = 14.000
 griever.MouseButton1Down:connect(function()
 Main.Visible = false
 Open.Visible = true
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.GrieverRaid.Griever.HumanoidRootPart.Position)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Griever.Griever.HumanoidRootPart.Position)
 end) 
 
 
