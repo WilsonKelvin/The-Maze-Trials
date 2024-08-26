@@ -792,7 +792,7 @@ end)
 griever.Name = "griever"
 griever.Parent = Lframe
 griever.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
-griever.Position = UDim2.new(0.50, 0, 0.14, 0)
+griever.Position = UDim2.new(0.74, 0, 0.14, 0)
 griever.Size = UDim2.new(0, 72, 0, 26)
 griever.Font = Enum.Font.FredokaOne
 griever.Text = "Griever"
