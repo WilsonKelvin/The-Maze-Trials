@@ -55,6 +55,12 @@ local gate = Instance.new("TextButton")
 local griever = Instance.new("TextButton")
 local exit = Instance.new("TextButton")
 local eframe = Instance.new("Frame")
+local exsec7 = Instance.new("TextButton")
+local exsec6 = Instance.new("TextButton")
+local exsec5 = Instance.new("TextButton")
+local exsec4 = Instance.new("TextButton")
+local exsec3 = Instance.new("TextButton")
+local exsec2 = Instance.new("TextButton")
 
 Maze.Name = "Maze"
 Maze.Parent = game.CoreGui
@@ -818,11 +824,10 @@ exit.Text = "Exit"
 exit.TextColor3 = Color3.fromRGB(255, 255, 255)
 exit.TextSize = 14.000
 exit.MouseButton1Down:connect(function()
-Main.Visible = false
-Open.Visible = true
+Lframe.Visible = false
 back.Visible = true
-exit.Visible = true
-eframe.Visible = false
+eframe.Visible = true
+Close.Visible = false
 end) 
 
 eframe = "eframe"
@@ -833,7 +838,85 @@ eframe.Position = UDim2.new(0, 0, 0.09, 0)
 eframe.Size = UDim2.new(0, 330, 0, 246)
 eframe.Visible = false
 
-3644, 557, 3500
+exsec7.Name = "exsec7"
+exsec7.Parent = eframe
+exsec7.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+exsec7.Position = UDim2.new(0.02, 0, 0.02, 0)
+exsec7.Size = UDim2.new(0, 72, 0, 26)
+exsec7.Font = Enum.Font.FredokaOne
+exsec7.Text = "Section 7"
+exsec7.TextColor3 = Color3.fromRGB(255, 255, 255)
+exsec7.TextSize = 14.000
+exsec7.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end) 
+
+exsec6.Name = "exsec6"
+exsec6.Parent = eframe
+exsec6.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+exsec6.Position = UDim2.new(0.26, 0, 0.02, 0)
+exsec6.Size = UDim2.new(0, 72, 0, 26)
+exsec6.Font = Enum.Font.FredokaOne
+exsec6.Text = "Section 6"
+exsec6.TextColor3 = Color3.fromRGB(255, 255, 255)
+exsec6.TextSize = 14.000
+exsec6.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end)
+
+exsec5.Name = "exsec5"
+exsec5.Parent = eframe
+exsec5.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+exsec5.Position = UDim2.new(0.50, 0, 0.02, 0)
+exsec5.Size = UDim2.new(0, 72, 0, 26)
+exsec5.Font = Enum.Font.FredokaOne
+exsec5.Text = "Section 5"
+exsec5.TextColor3 = Color3.fromRGB(255, 255, 255)
+exsec5.TextSize = 14.000
+exsec5.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3644, 557, 3500)
+end)
+
+exsec4.Name = "exsec4"
+exsec4.Parent = eframe
+exsec4.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+exsec4.Position = UDim2.new(0.74, 0, 0.02, 0)
+exsec4.Size = UDim2.new(0, 72, 0, 26)
+exsec4.Font = Enum.Font.FredokaOne
+exsec4.Text = "Section 4"
+exsec4.TextColor3 = Color3.fromRGB(255, 255, 255)
+exsec4.TextSize = 14.000
+exsec4.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end)
+
+exsec3.Name = "exsec3" 
+exsec3.Parent = eframe
+exsec3.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+exsec3.Position = UDim2.new(0.02, 0, 0.14, 0)
+exsec3.Size = UDim2.new(0, 72, 0, 26)
+exsec3.Font = Enum.Font.FredokaOne
+exsec3.Text = "Section 3"
+exsec3.TextColor3 = Color3.fromRGB(255, 255, 255)
+exsec3.TextSize = 14.000
+exsec3.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end)
+
+exsec2.Name = "exsec2" 
+exsec2.Parent = eframe
+exsec2.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+exsec2.Position = UDim2.new(0.28, 0, 0.14, 0)
+exsec2.Size = UDim2.new(0, 72, 0, 26)
+exsec2.Font = Enum.Font.FredokaOne
+exsec2.Text = "Section 2"
+exsec2.TextColor3 = Color3.fromRGB(255, 255, 255)
+exsec2.TextSize = 14.000
+exsec2.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end)
+
+
 
 
 
