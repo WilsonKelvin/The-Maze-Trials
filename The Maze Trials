@@ -825,6 +825,14 @@ exit.Visible = true
 eframe.Visible = false
 end) 
 
+eframe = "eframe"
+eframe.Parent = Main
+eframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+eframe.BackgroundTransparency = 0.5
+eframe.Position = UDim2.new(0, 0, 0.09, 0)
+eframe.Size = UDim2.new(0, 330, 0, 246)
+eframe.Visible = false
+
 3644, 557, 3500
 
 
