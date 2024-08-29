@@ -54,6 +54,7 @@ local grave = Instance.new("TextButton")
 local gate = Instance.new("TextButton")
 local griever = Instance.new("TextButton")
 local exit = Instance.new("TextButton")
+local eframe = Instance.new("Frame")
 
 Maze.Name = "Maze"
 Maze.Parent = game.CoreGui
@@ -431,6 +432,7 @@ seframe.Visible = false
 blframe.Visible = false
 glaframe.Visible = false
 Close.Visible = true
+eframe.Visible = false
 end)
 
 section.Name = "section"
@@ -819,8 +821,8 @@ exit.MouseButton1Down:connect(function()
 Main.Visible = false
 Open.Visible = true
 back.Visible = true
-Lexit.Visible = true
-Lframe.Visible = false
+exit.Visible = true
+eframe.Visible = false
 end) 
 
 3644, 557, 3500
