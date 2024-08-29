@@ -82,7 +82,7 @@ Label.BackgroundTransparency = 1.000
 Label.Position = UDim2.new(-0.0399380997, 0, -0.00923076924, 0)
 Label.Size = UDim2.new(0, 200, 0, 30)
 Label.Font = Enum.Font.SciFi
-Label.Text = "The Maze Trials - Beta"
+Label.Text = "The Maze Trials - Hack"
 Label.TextColor3 = Color3.fromRGB(76, 211, 211)
 Label.TextSize = 15.000
 
@@ -150,6 +150,7 @@ Esframe.Visible = true
 Lframe.Visible = false
 back.Visible = true
 close.Visible = false
+Label.Text = "List Escape - Hack"
 end)
 
 Esframe.Name = "Esframe"
@@ -279,6 +280,7 @@ Lframe.Visible = false
 back.Visible = true
 Parframe.Visible = true
 Close.Visible = false
+Label.Text = "List Parkour - Hack"
 end)
 
 Parframe.Name = "Parframe"
@@ -333,6 +335,7 @@ Ouframe.Visible = true
 Lframe.Visible = false
 back.Visible = true
 Close.Visible = false
+Label.Text = "List Outer - Hack"
 end)
 
 Ouframe.Name = "Ouframe"
@@ -439,6 +442,7 @@ blframe.Visible = false
 glaframe.Visible = false
 Close.Visible = true
 eframe.Visible = false
+Label.Text = "The Maze Trials - Hack"
 end)
 
 section.Name = "section"
@@ -455,6 +459,7 @@ Lframe.Visible = false
 seframe.Visible = true
 back.Visible = true
 Close.Visible = false
+Label.Text = "List Section - Hack"
 end)
 
 seframe.Name = "seframe"
@@ -569,6 +574,7 @@ Lframe.Visible = false
 blframe.Visible = true
 back.Visible = true
 Close.Visible = false
+Label.Text = "List Blades - Hack"
 end) 
 
 blframe.Name = "blframe"
@@ -683,6 +689,7 @@ Lframe.Visible = false
 glaframe.Visible = true
 back.Visible = true
 Close.Visible = false
+Label.Text = "List Glade - Hack"
 end) 
 
 glaframe.Name = "glaframe"
@@ -828,6 +835,7 @@ Lframe.Visible = false
 back.Visible = true
 eframe.Visible = true
 Close.Visible = false
+Label.Text = "List Exits - Hack"
 end) 
 
 eframe = "eframe"
