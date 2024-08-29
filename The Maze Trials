@@ -821,14 +821,6 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Wor
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Grieverraid.Griever.HumanoidRootPart.Position)
 end) 
 
-exframe = "exframe"
-exframe.Parent = Main
-exframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
-exframe.BackgroundTransparency = 0.5
-exframe.Position = UDim2.new(0, 0, 0.09, 0)
-exframe.Size = UDim2.new(0, 330, 0, 246)
-exframe.Visible = false
-
 exit.Name = "exit"
 exit.Parent = Lframe
 exit.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
@@ -839,8 +831,20 @@ exit.Text = "Exit"
 exit.TextColor3 = Color3.fromRGB(255, 255, 255)
 exit.TextSize = 14.000
 exit.MouseButton1Down:connect(function()
-
+Lframe.Visible = false
+back.Visible = true
+exframe.Visible = true
+Close.Visible = false
+Label.Text = "List Exits - Hack"
 end) 
+
+exframe = "exframe"
+exframe.Parent = Main
+exframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+exframe.BackgroundTransparency = 0.5
+exframe.Position = UDim2.new(0, 0, 0.09, 0)
+exframe.Size = UDim2.new(0, 330, 0, 246)
+exframe.Visible = false
 
 exsec7.Name = "exsec7"
 exsec7.Parent = exframe
