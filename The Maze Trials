@@ -53,6 +53,7 @@ local map = Instance.new("TextButton")
 local grave = Instance.new("TextButton")
 local gate = Instance.new("TextButton")
 local griever = Instance.new("TextButton")
+local exit = Instance.new("TextButton")
 
 Maze.Name = "Maze"
 Maze.Parent = game.CoreGui
