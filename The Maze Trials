@@ -146,11 +146,11 @@ Lescape.Text = "Escape"
 Lescape.TextColor3 = Color3.fromRGB(255, 255, 255)
 Lescape.TextSize = 14.000
 Lescape.MouseButton1Down:connect(function()
+Label.Text = "List Escape - Hack"
 Esframe.Visible = true
 Lframe.Visible = false
 back.Visible = true
 close.Visible = false
-Label.Text = "List Escape - Hack"
 end)
 
 Esframe.Name = "Esframe"
@@ -432,6 +432,7 @@ back.TextColor3 = Color3.fromRGB(255, 255, 255)
 back.TextSize = 14.000
 back.Visible = false
 back.MouseButton1Down:connect(function()
+Label.Text = "The Maze Trials - Hack"
 Lframe.Visible = true
 back.Visible = false
 Esframe.Visible = false
@@ -442,7 +443,6 @@ blframe.Visible = false
 glaframe.Visible = false
 Close.Visible = true
 eframe.Visible = false
-Label.Text = "The Maze Trials - Hack"
 end)
 
 section.Name = "section"
@@ -824,7 +824,7 @@ end)
 exit.Name = "exit"
 exit.Parent = Lframe
 exit.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
-exit.Position = UDim2.new(0.02, 0, 0.28, 0)
+exit.Position = UDim2.new(0.02, 0, 0.26, 0)
 exit.Size = UDim2.new(0, 72, 0, 26)
 exit.Font = Enum.Font.FredokaOne
 exit.Text = "Exit"
