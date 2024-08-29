@@ -806,6 +806,24 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Wor
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Grieverraid.Griever.HumanoidRootPart.Position)
 end) 
 
+exit.Name = "exit"
+exit.Parent = Lframe
+exit.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
+exit.Position = UDim2.new(0.02, 0, 0.28, 0)
+exit.Size = UDim2.new(0, 72, 0, 26)
+exit.Font = Enum.Font.FredokaOne
+exit.Text = "Exit"
+exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+exit.TextSize = 14.000
+exit.MouseButton1Down:connect(function()
+Main.Visible = false
+Open.Visible = true
+back.Visible = true
+Lexit.Visible = true
+Lframe.Visible = false
+end) 
+
+3644, 557, 3500
 
 
 
