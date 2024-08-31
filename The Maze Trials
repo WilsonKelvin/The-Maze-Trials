@@ -54,7 +54,7 @@ local grave = Instance.new("TextButton")
 local gate = Instance.new("TextButton")
 local griever = Instance.new("TextButton")
 local exit = Instance.new("TextButton")
-local exiframe = Instance.new("Frame")
+local exframe = Instance.new("Frame")
 local exsec7 = Instance.new("TextButton")
 local exsec6 = Instance.new("TextButton")
 local exsec5 = Instance.new("TextButton")
@@ -838,16 +838,16 @@ Close.Visible = false
 Label.Text = "List Exits - Hack"
 end) 
 
-exiframe = "exiframe"
-exiframe.Parent = Main
-exiframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
-exiframe.BackgroundTransparency = 0.5
-exiframe.Position = UDim2.new(0, 0, 0.09, 0)
-exiframe.Size = UDim2.new(0, 330, 0, 246)
-exiframe.Visible = false
+exframe = "exframe"
+exframe.Parent = Main
+exframe.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+exframe.BackgroundTransparency = 0.5
+exframe.Position = UDim2.new(0, 0, 0.09, 0)
+exframe.Size = UDim2.new(0, 330, 0, 246)
+exframe.Visible = false
 
 exsec7.Name = "exsec7"
-exsec7.Parent = exiframe
+exsec7.Parent = exframe
 exsec7.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
 exsec7.Position = UDim2.new(0.02, 0, 0.02, 0)
 exsec7.Size = UDim2.new(0, 72, 0, 26)
@@ -860,7 +860,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 end) 
 
 exsec6.Name = "exsec6"
-exsec6.Parent = exiframe
+exsec6.Parent = exframe
 exsec6.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
 exsec6.Position = UDim2.new(0.26, 0, 0.02, 0)
 exsec6.Size = UDim2.new(0, 72, 0, 26)
@@ -873,7 +873,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 end)
 
 exsec5.Name = "exsec5"
-exsec5.Parent = exiframe
+exsec5.Parent = exframe
 exsec5.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
 exsec5.Position = UDim2.new(0.50, 0, 0.02, 0)
 exsec5.Size = UDim2.new(0, 72, 0, 26)
@@ -886,7 +886,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3644, 55
 end)
 
 exsec4.Name = "exsec4"
-exsec4.Parent = exiframe
+exsec4.Parent = exframe
 exsec4.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
 exsec4.Position = UDim2.new(0.74, 0, 0.02, 0)
 exsec4.Size = UDim2.new(0, 72, 0, 26)
@@ -899,7 +899,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 end)
 
 exsec3.Name = "exsec3" 
-exsec3.Parent = exiframe
+exsec3.Parent = exframe
 exsec3.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
 exsec3.Position = UDim2.new(0.02, 0, 0.14, 0)
 exsec3.Size = UDim2.new(0, 72, 0, 26)
@@ -912,7 +912,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 end)
 
 exsec2.Name = "exsec2" 
-exsec2.Parent = exiframe
+exsec2.Parent = exframe
 exsec2.BackgroundColor3 = Color3.fromRGB(66, 100, 100)
 exsec2.Position = UDim2.new(0.28, 0, 0.14, 0)
 exsec2.Size = UDim2.new(0, 72, 0, 26)
